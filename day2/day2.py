@@ -25,7 +25,7 @@ for i in range(total):
         validpass_part1+=1
 
     if (letter == password[position[0]-1]) ^ (letter == password[position[1]-1]):
-        print(letter, password[position[0]-1], password[position[1]-1])
+        #print(letter, password[position[0]-1], password[position[1]-1])
         validpass_part2+=1
 
 print('Part 1:', validpass_part1, 'Part 2:', validpass_part2)
