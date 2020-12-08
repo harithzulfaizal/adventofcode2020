@@ -44,13 +44,13 @@ def count_two(instr):
 
 def part_two(instr):
     for v in index_norpt[::-1]:
-        modified = instr
-        if modified[v][0] == 'jmp':
-            modified[v][0] = 'nop'
-            count_two(modified)
-        elif modified[v][0] == 'nop':
-            modified[v][0] = 'jmp'
-            count_two(modified)
+        changednj = instr
+        if changednj[v][0] == 'jmp':
+            changednj[v][0] = 'nop'
+            count_two(changednj)
+        elif changednj[v][0] == 'nop':
+            changednj[v][0] = 'jmp'
+            count_two(changednj)
 
 
 if __name__ == "__main__":
